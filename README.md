@@ -1,6 +1,21 @@
 [jQuery](http://jquery.com/) — New Wave JavaScript
 ==================================================
 
+<font color="red">
+
+----
+
+**This fork back-ports reported security vulnerabilities on jQuery 2.2.4**
+
+- XSS [CVE-2020-11022](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11022)
+- XSS [CVE-2020-11023](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11023)
+- Prototype Polution [CVE-2019-5428](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5428)
+- XSS [CVE-2017-16012](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16012)
+
+----
+
+</font>
+
 Contribution Guides
 --------------------------------------
 

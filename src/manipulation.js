@@ -415,7 +415,10 @@ jQuery.fn.extend( {
 						// Remove element nodes and prevent memory leaks
 						if ( elem.nodeType === 1 ) {
 							jQuery.cleanData( getAll( elem, false ) );
-							elem.innerHTML = value;
+
+							// mitigate CVE-2020-11023
+							// see https://github.com/jquery/jquery/security/advisories/GHSA-jpcq-cgw6-v4j6
+							elem.innerHTML = jQuery.purify( value );
 						}
 					}
 
